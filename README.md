@@ -14,24 +14,6 @@ Hosted on **Streamlit Cloud**
 - **Optional Tool Calling Support**
 - **Generative UI** built with Streamlit
 - **Deployed on Streamlit Cloud**
-
----
-
-## Project Structure
-
-rag-based-chatbot/
-├── llm_response/
-│ └── generate_response.py # Runs RAG using vector DB + Groq
-├── rag_engine1/
-│ ├── build_vector_store.py # Builds FAISS vector DB from textbook
-│ └── query_rag_with_groq.py # Embedding + Groq integration
-├── multimodal_input/
-│ └── image_to_text.py # OCR using pytesseract or OCR API
-├── faiss_index/ # Vector DB stored locally
-├── streamlit_app.py # Main Streamlit frontend
-├── requirements.txt
-└── README.md
-
 ---
 
 ## Setup Instructions
@@ -42,13 +24,16 @@ rag-based-chatbot/
    cd rag-based-chatbot
    
 2. **Create and activate virtual environment**
+   ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-3. **Install dependencies**
+4. **Install dependencies**
+   ```bash
    pip install -r requirements.txt
 
-4. **Add your secrets**
+6. **Add your secrets**
+   ```bash
    On Streamlit Cloud, go to App Settings → Secrets, and add:
    GROQ_API_KEY = "your_groq_api_key"
    OCR_API_KEY = "your_ocr_api_key"  # Optional if using online OCR
