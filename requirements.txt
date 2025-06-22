@@ -1,0 +1,12 @@
+openai
+langchain
+faiss-cpu
+pytesseract
+Pillow
+streamlit
+groq
+PyMuPDF
+langchain-community
+langchain-huggingface
+pypdf
+sentence-transformers
