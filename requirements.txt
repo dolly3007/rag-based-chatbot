@@ -1,5 +1,4 @@
 openai
-langchain
 faiss-cpu
 pytesseract
 Pillow
@@ -10,3 +9,5 @@ langchain-community
 langchain-huggingface
 pypdf
 sentence-transformers
+langchain>=0.2.2
+langchain_groq
