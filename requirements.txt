@@ -11,3 +11,5 @@ pypdf
 sentence-transformers
 langchain>=0.2.2
 langchain_groq
+requests
+
